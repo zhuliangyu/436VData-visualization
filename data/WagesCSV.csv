@@ -1,0 +1,385 @@
+Date,Amount,Label,Sector,Key,Display
+Jan-19,733098,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Feb-19,732808,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Mar-19,786258,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Apr-19,799088,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+May-19,981093,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Jun-19,1069237,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Jul-19,1071811,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Aug-19,1115990,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Sep-19,1045882,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Oct-19,1032604,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Nov-19,927841,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Dec-19,1022923,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Jan-20,817470,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Feb-20,765528,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Mar-20,745728,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Apr-20,764058,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+May-20,921852,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Jun-20,1007272,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Jul-20,1079029,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Aug-20,1058600,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Sep-20,1071208,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Oct-20,1042351,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Nov-20,926930,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Dec-20,1044747,Agriculture forestry fishing and hunting,Goods-producing sector,Agriculture,FALSE
+Jan-19,2411243,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Feb-19,2521050,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Mar-19,2535927,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Apr-19,2503224,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+May-19,2491752,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Jun-19,2512676,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Jul-19,2388847,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Aug-19,2357022,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Sep-19,2318821,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Oct-19,2385269,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Nov-19,2415760,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Dec-19,2495575,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Jan-20,2552876,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Feb-20,2556984,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Mar-20,2558909,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Apr-20,2385407,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+May-20,2238799,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Jun-20,2240369,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Jul-20,2161694,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Aug-20,2140990,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Sep-20,2183211,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Oct-20,2156852,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Nov-20,2215340,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Dec-20,2274463,Mining and oil and gas extraction,Goods-producing sector,Mining oil and gas,FALSE
+Jan-19,8401667,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Feb-19,8629854,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Mar-19,8665145,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Apr-19,8696182,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+May-19,8742901,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Jun-19,8925164,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Jul-19,8964551,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Aug-19,8713696,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Sep-19,8734455,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Oct-19,8815576,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Nov-19,8749435,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Dec-19,9244440,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Jan-20,8675549,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Feb-20,8802585,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Mar-20,8050755,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Apr-20,7457636,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+May-20,7439403,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Jun-20,8053495,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Jul-20,8422873,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Aug-20,8398294,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Sep-20,8602288,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Oct-20,8602318,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Nov-20,8533924,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Dec-20,8987685,Manufacturing,Goods-producing sector,Manufacturing,FALSE
+Jan-19,6154482,Construction,Goods-producing sector,Construction,FALSE
+Feb-19,6358280,Construction,Goods-producing sector,Construction,FALSE
+Mar-19,6551938,Construction,Goods-producing sector,Construction,FALSE
+Apr-19,6619078,Construction,Goods-producing sector,Construction,FALSE
+May-19,7160146,Construction,Goods-producing sector,Construction,FALSE
+Jun-19,7527266,Construction,Goods-producing sector,Construction,FALSE
+Jul-19,7632606,Construction,Goods-producing sector,Construction,FALSE
+Aug-19,7857168,Construction,Goods-producing sector,Construction,FALSE
+Sep-19,7838782,Construction,Goods-producing sector,Construction,FALSE
+Oct-19,7810501,Construction,Goods-producing sector,Construction,FALSE
+Nov-19,7572580,Construction,Goods-producing sector,Construction,FALSE
+Dec-19,7553053,Construction,Goods-producing sector,Construction,FALSE
+Jan-20,6512799,Construction,Goods-producing sector,Construction,FALSE
+Feb-20,6682190,Construction,Goods-producing sector,Construction,FALSE
+Mar-20,6125140,Construction,Goods-producing sector,Construction,FALSE
+Apr-20,5163026,Construction,Goods-producing sector,Construction,FALSE
+May-20,5920422,Construction,Goods-producing sector,Construction,FALSE
+Jun-20,6860668,Construction,Goods-producing sector,Construction,FALSE
+Jul-20,7138101,Construction,Goods-producing sector,Construction,FALSE
+Aug-20,7480321,Construction,Goods-producing sector,Construction,FALSE
+Sep-20,7752896,Construction,Goods-producing sector,Construction,FALSE
+Oct-20,7828830,Construction,Goods-producing sector,Construction,FALSE
+Nov-20,7595852,Construction,Goods-producing sector,Construction,FALSE
+Dec-20,7451762,Construction,Goods-producing sector,Construction,FALSE
+Jan-19,1059275,Utilities,Goods-producing sector,Utilities,FALSE
+Feb-19,1108045,Utilities,Goods-producing sector,Utilities,FALSE
+Mar-19,1108830,Utilities,Goods-producing sector,Utilities,FALSE
+Apr-19,1099468,Utilities,Goods-producing sector,Utilities,FALSE
+May-19,1128451,Utilities,Goods-producing sector,Utilities,FALSE
+Jun-19,1141202,Utilities,Goods-producing sector,Utilities,FALSE
+Jul-19,1113860,Utilities,Goods-producing sector,Utilities,FALSE
+Aug-19,1085103,Utilities,Goods-producing sector,Utilities,FALSE
+Sep-19,1081354,Utilities,Goods-producing sector,Utilities,FALSE
+Oct-19,1116769,Utilities,Goods-producing sector,Utilities,FALSE
+Nov-19,1133073,Utilities,Goods-producing sector,Utilities,FALSE
+Dec-19,1149487,Utilities,Goods-producing sector,Utilities,FALSE
+Jan-20,1157647,Utilities,Goods-producing sector,Utilities,FALSE
+Feb-20,1218666,Utilities,Goods-producing sector,Utilities,FALSE
+Mar-20,1197560,Utilities,Goods-producing sector,Utilities,FALSE
+Apr-20,1112981,Utilities,Goods-producing sector,Utilities,FALSE
+May-20,1104193,Utilities,Goods-producing sector,Utilities,FALSE
+Jun-20,1119933,Utilities,Goods-producing sector,Utilities,FALSE
+Jul-20,1009878,Utilities,Goods-producing sector,Utilities,FALSE
+Aug-20,1050800,Utilities,Goods-producing sector,Utilities,FALSE
+Sep-20,1033471,Utilities,Goods-producing sector,Utilities,FALSE
+Oct-20,1062841,Utilities,Goods-producing sector,Utilities,FALSE
+Nov-20,1076161,Utilities,Goods-producing sector,Utilities,FALSE
+Dec-20,1063320,Utilities,Goods-producing sector,Utilities,FALSE
+19-Jan,10497866,Trade,Services-producing sector,Trade,FALSE
+19-Feb,10423891,Trade,Services-producing sector,Trade,FALSE
+19-Mar,10510381,Trade,Services-producing sector,Trade,FALSE
+19-Apr,10522475,Trade,Services-producing sector,Trade,FALSE
+19-May,10777784,Trade,Services-producing sector,Trade,FALSE
+19-Jun,10989168,Trade,Services-producing sector,Trade,FALSE
+19-Jul,10650866,Trade,Services-producing sector,Trade,FALSE
+19-Aug,10521954,Trade,Services-producing sector,Trade,FALSE
+19-Sep,10437091,Trade,Services-producing sector,Trade,FALSE
+19-Oct,10627881,Trade,Services-producing sector,Trade,FALSE
+19-Nov,10886294,Trade,Services-producing sector,Trade,FALSE
+19-Dec,11358711,Trade,Services-producing sector,Trade,FALSE
+20-Jan,10743413,Trade,Services-producing sector,Trade,FALSE
+20-Feb,10711117,Trade,Services-producing sector,Trade,FALSE
+20-Mar,10063095,Trade,Services-producing sector,Trade,FALSE
+20-Apr,9348825,Trade,Services-producing sector,Trade,FALSE
+20-May,9408778,Trade,Services-producing sector,Trade,FALSE
+20-Jun,10275362,Trade,Services-producing sector,Trade,FALSE
+20-Jul,10519243,Trade,Services-producing sector,Trade,FALSE
+20-Aug,10584748,Trade,Services-producing sector,Trade,FALSE
+20-Sep,10591660,Trade,Services-producing sector,Trade,FALSE
+20-Oct,10787595,Trade,Services-producing sector,Trade,FALSE
+20-Nov,10798160,Trade,Services-producing sector,Trade,FALSE
+20-Dec,11244993,Trade,Services-producing sector,Trade,FALSE
+Jan-19,4146346,Transportation and storage,Services-producing sector,Transportation,FALSE
+Feb-19,4210003,Transportation and storage,Services-producing sector,Transportation,FALSE
+Mar-19,4192600,Transportation and storage,Services-producing sector,Transportation,FALSE
+Apr-19,4268180,Transportation and storage,Services-producing sector,Transportation,FALSE
+May-19,4372480,Transportation and storage,Services-producing sector,Transportation,FALSE
+Jun-19,4443609,Transportation and storage,Services-producing sector,Transportation,FALSE
+Jul-19,4378957,Transportation and storage,Services-producing sector,Transportation,FALSE
+Aug-19,4431103,Transportation and storage,Services-producing sector,Transportation,FALSE
+Sep-19,4418147,Transportation and storage,Services-producing sector,Transportation,FALSE
+Oct-19,4393182,Transportation and storage,Services-producing sector,Transportation,FALSE
+Nov-19,4450347,Transportation and storage,Services-producing sector,Transportation,FALSE
+Dec-19,4682733,Transportation and storage,Services-producing sector,Transportation,FALSE
+Jan-20,4555699,Transportation and storage,Services-producing sector,Transportation,FALSE
+Feb-20,4530795,Transportation and storage,Services-producing sector,Transportation,FALSE
+Mar-20,4303707,Transportation and storage,Services-producing sector,Transportation,FALSE
+Apr-20,4161194,Transportation and storage,Services-producing sector,Transportation,FALSE
+May-20,4180904,Transportation and storage,Services-producing sector,Transportation,FALSE
+Jun-20,4330121,Transportation and storage,Services-producing sector,Transportation,FALSE
+Jul-20,4314356,Transportation and storage,Services-producing sector,Transportation,FALSE
+Aug-20,4452367,Transportation and storage,Services-producing sector,Transportation,FALSE
+Sep-20,4495952,Transportation and storage,Services-producing sector,Transportation,FALSE
+Oct-20,4543216,Transportation and storage,Services-producing sector,Transportation,FALSE
+Nov-20,4522363,Transportation and storage,Services-producing sector,Transportation,FALSE
+Dec-20,4814483,Transportation and storage,Services-producing sector,Transportation,FALSE
+Jan-19,2232433,Information and cultural industries,Services-producing sector,Information,FALSE
+Feb-19,2223311,Information and cultural industries,Services-producing sector,Information,FALSE
+Mar-19,2215908,Information and cultural industries,Services-producing sector,Information,FALSE
+Apr-19,2249879,Information and cultural industries,Services-producing sector,Information,FALSE
+May-19,2332592,Information and cultural industries,Services-producing sector,Information,FALSE
+Jun-19,2354312,Information and cultural industries,Services-producing sector,Information,FALSE
+Jul-19,2402376,Information and cultural industries,Services-producing sector,Information,FALSE
+Aug-19,2333643,Information and cultural industries,Services-producing sector,Information,FALSE
+Sep-19,2306705,Information and cultural industries,Services-producing sector,Information,FALSE
+Oct-19,2279348,Information and cultural industries,Services-producing sector,Information,FALSE
+Nov-19,2373281,Information and cultural industries,Services-producing sector,Information,FALSE
+Dec-19,2448460,Information and cultural industries,Services-producing sector,Information,FALSE
+Jan-20,2388766,Information and cultural industries,Services-producing sector,Information,FALSE
+Feb-20,2467985,Information and cultural industries,Services-producing sector,Information,FALSE
+Mar-20,2378140,Information and cultural industries,Services-producing sector,Information,FALSE
+Apr-20,2246482,Information and cultural industries,Services-producing sector,Information,FALSE
+May-20,2202606,Information and cultural industries,Services-producing sector,Information,FALSE
+Jun-20,2164092,Information and cultural industries,Services-producing sector,Information,FALSE
+Jul-20,2195571,Information and cultural industries,Services-producing sector,Information,FALSE
+Aug-20,2296626,Information and cultural industries,Services-producing sector,Information,FALSE
+Sep-20,2501909,Information and cultural industries,Services-producing sector,Information,FALSE
+Oct-20,2430594,Information and cultural industries,Services-producing sector,Information,FALSE
+Nov-20,2514552,Information and cultural industries,Services-producing sector,Information,FALSE
+Dec-20,2484682,Information and cultural industries,Services-producing sector,Information,FALSE
+Jan-19,8076143,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Feb-19,8131431,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Mar-19,8130732,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Apr-19,8047204,Finance real estate and company management,Services-producing sector,Finance,FALSE
+May-19,8155347,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Jun-19,8101110,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Jul-19,8098770,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Aug-19,8050807,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Sep-19,7983446,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Oct-19,7868458,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Nov-19,8012493,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Dec-19,8398329,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Jan-20,8330177,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Feb-20,8430108,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Mar-20,8166340,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Apr-20,8061972,Finance real estate and company management,Services-producing sector,Finance,FALSE
+May-20,8263452,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Jun-20,8066312,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Jul-20,8241816,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Aug-20,8183954,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Sep-20,8178593,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Oct-20,8141682,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Nov-20,8430535,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Dec-20,8819289,Finance real estate and company management,Services-producing sector,Finance,FALSE
+Jan-19,15749770,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Feb-19,15914543,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Mar-19,16243512,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Apr-19,15993843,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+May-19,16261434,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Jun-19,16693559,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Jul-19,16766137,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Aug-19,16931583,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Sep-19,16973001,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Oct-19,16927275,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Nov-19,17055856,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Dec-19,17586617,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Jan-20,16978235,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Feb-20,16886712,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Mar-20,15808437,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Apr-20,13816599,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+May-20,13583943,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Jun-20,14489639,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Jul-20,15436801,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Aug-20,15613345,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Sep-20,16146426,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Oct-20,16205475,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Nov-20,16067602,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Dec-20,16537154,Professional and personal services industries,Services-producing sector,Personal services,FALSE
+Jan-19,6431769,Educational services,Services-producing sector,Education,FALSE
+Feb-19,6649243,Educational services,Services-producing sector,Education,FALSE
+Mar-19,6622643,Educational services,Services-producing sector,Education,FALSE
+Apr-19,6667251,Educational services,Services-producing sector,Education,FALSE
+May-19,6736218,Educational services,Services-producing sector,Education,FALSE
+Jun-19,6884689,Educational services,Services-producing sector,Education,FALSE
+Jul-19,5412724,Educational services,Services-producing sector,Education,FALSE
+Aug-19,5097247,Educational services,Services-producing sector,Education,FALSE
+Sep-19,6689144,Educational services,Services-producing sector,Education,FALSE
+Oct-19,6925753,Educational services,Services-producing sector,Education,FALSE
+Nov-19,6946895,Educational services,Services-producing sector,Education,FALSE
+Dec-19,6991339,Educational services,Services-producing sector,Education,FALSE
+Jan-20,6590111,Educational services,Services-producing sector,Education,FALSE
+Feb-20,6769723,Educational services,Services-producing sector,Education,FALSE
+Mar-20,6890311,Educational services,Services-producing sector,Education,FALSE
+Apr-20,6597786,Educational services,Services-producing sector,Education,FALSE
+May-20,6255350,Educational services,Services-producing sector,Education,FALSE
+Jun-20,6348323,Educational services,Services-producing sector,Education,FALSE
+Jul-20,5412171,Educational services,Services-producing sector,Education,FALSE
+Aug-20,5039617,Educational services,Services-producing sector,Education,FALSE
+Sep-20,6637439,Educational services,Services-producing sector,Education,FALSE
+Oct-20,6910110,Educational services,Services-producing sector,Education,FALSE
+Nov-20,7023194,Educational services,Services-producing sector,Education,FALSE
+Dec-20,7153460,Educational services,Services-producing sector,Education,FALSE
+Jan-19,8392845,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Feb-19,8370447,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Mar-19,8413346,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Apr-19,8516585,Health care and social assistance,Services-producing sector,Health care ,FALSE
+May-19,8675222,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Jun-19,8810856,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Jul-19,8809663,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Aug-19,8726913,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Sep-19,8703510,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Oct-19,8715048,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Nov-19,8784629,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Dec-19,9022092,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Jan-20,8853000,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Feb-20,8859331,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Mar-20,8717446,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Apr-20,8412918,Health care and social assistance,Services-producing sector,Health care ,FALSE
+May-20,8468508,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Jun-20,8879184,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Jul-20,9102685,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Aug-20,9304831,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Sep-20,9429334,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Oct-20,9358933,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Nov-20,9398612,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Dec-20,9677063,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Jan-19,508489,Military,Services-producing sector,Military,FALSE
+Feb-19,513888,Military,Services-producing sector,Military,FALSE
+Mar-19,518565,Military,Services-producing sector,Military,FALSE
+Apr-19,515400,Military,Services-producing sector,Military,FALSE
+May-19,526968,Military,Services-producing sector,Military,FALSE
+Jun-19,530676,Military,Services-producing sector,Military,FALSE
+Jul-19,550702,Military,Services-producing sector,Military,FALSE
+Aug-19,532950,Military,Services-producing sector,Military,FALSE
+Sep-19,518425,Military,Services-producing sector,Military,FALSE
+Oct-19,525405,Military,Services-producing sector,Military,FALSE
+Nov-19,526523,Military,Services-producing sector,Military,FALSE
+Dec-19,522013,Military,Services-producing sector,Military,FALSE
+Jan-20,513716,Military,Services-producing sector,Military,FALSE
+Feb-20,520658,Military,Services-producing sector,Military,FALSE
+Mar-20,520658,Military,Services-producing sector,Military,FALSE
+Apr-20,534301,Military,Services-producing sector,Military,FALSE
+May-20,545541,Military,Services-producing sector,Military,FALSE
+Jun-20,542933,Military,Services-producing sector,Military,FALSE
+Jul-20,542933,Military,Services-producing sector,Military,FALSE
+Aug-20,542933,Military,Services-producing sector,Military,FALSE
+Sep-20,521303,Military,Services-producing sector,Military,FALSE
+Oct-20,529414,Military,Services-producing sector,Military,FALSE
+Nov-20,528656,Military,Services-producing sector,Military,FALSE
+Dec-20,530541,Military,Services-producing sector,Military,FALSE
+Jan-19,2301647,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Feb-19,2326764,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Mar-19,2344260,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Apr-19,2346094,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+May-19,2354726,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Jun-19,2360628,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Jul-19,2368552,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Aug-19,2323981,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Sep-19,2336012,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Oct-19,2412137,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Nov-19,2411487,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Dec-19,2476151,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Jan-20,2438064,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Feb-20,2457468,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Mar-20,2482569,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Apr-20,2486468,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+May-20,2444406,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Jun-20,2444746,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Jul-20,2466536,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Aug-20,2451312,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Sep-20,2501106,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Oct-20,2518008,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Nov-20,2566142,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Dec-20,2611125,Federal government public administration excluding military,Services-producing sector,Federal government,FALSE
+Jan-19,1656048,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Feb-19,1674656,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Mar-19,1686854,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Apr-19,1701019,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+May-19,1734821,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Jun-19,1759221,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Jul-19,1768833,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Aug-19,1770349,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Sep-19,1736252,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Oct-19,1705492,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Nov-19,1696329,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Dec-19,1696909,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Jan-20,1693602,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Feb-20,1693958,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Mar-20,1716156,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Apr-20,1704911,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+May-20,1723448,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Jun-20,1739708,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Jul-20,1757117,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Aug-20,1790148,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Sep-20,1756183,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Oct-20,1784138,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Nov-20,1780704,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Dec-20,1789163,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
+Jan-19,2219292,Local government public administration,Services-producing sector,Local government ,FALSE
+Feb-19,2218999,Local government public administration,Services-producing sector,Local government ,FALSE
+Mar-19,2213020,Local government public administration,Services-producing sector,Local government ,FALSE
+Apr-19,2211523,Local government public administration,Services-producing sector,Local government ,FALSE
+May-19,2328217,Local government public administration,Services-producing sector,Local government ,FALSE
+Jun-19,2403471,Local government public administration,Services-producing sector,Local government ,FALSE
+Jul-19,2473201,Local government public administration,Services-producing sector,Local government ,FALSE
+Aug-19,2403694,Local government public administration,Services-producing sector,Local government ,FALSE
+Sep-19,2330247,Local government public administration,Services-producing sector,Local government ,FALSE
+Oct-19,2329392,Local government public administration,Services-producing sector,Local government ,FALSE
+Nov-19,2388461,Local government public administration,Services-producing sector,Local government ,FALSE
+Dec-19,2419009,Local government public administration,Services-producing sector,Local government ,FALSE
+Jan-20,2349833,Local government public administration,Services-producing sector,Local government ,FALSE
+Feb-20,2321428,Local government public administration,Services-producing sector,Local government ,FALSE
+Mar-20,2284284,Local government public administration,Services-producing sector,Local government ,FALSE
+Apr-20,2227764,Local government public administration,Services-producing sector,Local government ,FALSE
+May-20,2235930,Local government public administration,Services-producing sector,Local government ,FALSE
+Jun-20,2331091,Local government public administration,Services-producing sector,Local government ,FALSE
+Jul-20,2406724,Local government public administration,Services-producing sector,Local government ,FALSE
+Aug-20,2512392,Local government public administration,Services-producing sector,Local government ,FALSE
+Sep-20,2452786,Local government public administration,Services-producing sector,Local government ,FALSE
+Oct-20,2422298,Local government public administration,Services-producing sector,Local government ,FALSE
+Nov-20,2491302,Local government public administration,Services-producing sector,Local government ,FALSE
+Dec-20,2510014,Local government public administration,Services-producing sector,Local government ,FALSE
