@@ -41,11 +41,17 @@ body {
   }
   
   /* Axes */
+ 
   .axis line {
-    fill: none;
-    stroke: #ddd;
+    stroke: #706f6f;
+    stroke-width: 0.5;
     shape-rendering: crispEdges;
   }
+  .axis path {
+    stroke: #706f6f;
+    stroke-width: 0.7;
+    shape-rendering: crispEdges;
+    }
   .axis text {
     font-size: 13px;
     fill: #6b6b6b;
@@ -54,40 +60,30 @@ body {
     font-size: 13px;
     fill: #888;
   }
-  .y-axis .tick:first-child line {
-    stroke: #b1b1b1;
-  }
-  .y-axis .tick:first-child text {
-    display: none;
-  }
-  .x-axis .tick:first-child line {
-    display: none;
-  }
-  .axis path {
-    display: none;
-  }
+
+  path {
+    fill: none;
+    stroke: #ed3700;
+    }
+ 
+    path.line-0 {
+      fill: none;
+      stroke: #ed3700;
+      }
+      
+      path.line-1 {
+      fill: none;
+      stroke: #2b2929;
+      stroke-dasharray: 2;
+      }
+      
+      path.line-2 {
+      fill: none;
+      stroke: #9c9c9c;
+      stroke-dasharray: 6;
+      }
   
   
-  /* Tooltip */
-  #tooltip {
-    position: absolute;
-    display: none;
-    background: #fff;
-    box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
-    border: 1px solid #ddd;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 8px;
-    min-width: 160px;
-    color: #333;
-  }
-  .tooltip-title {
-    color: #000;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  #tooltip ul {
-    margin: 5px 0 0 0;
-    padding-left: 20px;
-  }
+  
+
   
