@@ -42,9 +42,10 @@ Promise.all([
     // initialize views
     doublePieDateAfterProcessing = generateDoublePieData(sectorSelected, dateSelected);
 
-    lineChart = new PieChart({
-        parentElement: '#LineChart',
-    }, originalHoursData);
+    pieChart = new PieChart({
+        parentElement: '#PieChart',
+    }, doublePieDateAfterProcessing);
+
 }).catch(function(err) {
     console.error(err, err.stack);
 })
@@ -56,8 +57,9 @@ d3.selectAll("input.pieInput").on("change", function(){
 
     // filter and generate pie data
     doublePieDateAfterProcessing = generateDoublePieData(sectorSelected, dateSelected);
-    
+
     // update pie chart view
+    pieChart.updateVis(doublePieDateAfterProcessing);
 
 });
 
@@ -69,9 +71,8 @@ d3.selectAll("input#range").on("change", function(){
     // filter and generate pie data
     doublePieDateAfterProcessing = generateDoublePieData(sectorSelected, dateSelected);
 
-
     // update pie chart view
-
+    pieChart.updateVis(doublePieDateAfterProcessing);
 });
 
 // date range transfer helper method
