@@ -4,6 +4,10 @@
  let pieChart,lineChart,geoChart;
  let originalHoursData;
  let originalWagesData;
+ // default selection
+ let dateSelected = "Jan-19";
+ let sectorSelected = "Goods-producing sector";
+ let doublePieDateAfterProcessing;
 
  // date range selector init
 const
@@ -36,6 +40,8 @@ Promise.all([
     // console.log(originalWagesData);
 
     // initialize views
+    doublePieDateAfterProcessing = generateDoublePieData(sectorSelected, dateSelected);
+
     lineChart = new PieChart({
         parentElement: '#LineChart',
     }, originalHoursData);
@@ -43,27 +49,33 @@ Promise.all([
     console.error(err, err.stack);
 })
 
-// listen to radio button changes
+// listen to sector radio button changes
 d3.selectAll("input.pieInput").on("change", function(){
-    console.log(this.value)
-    // filter data
+    sectorSelected = this.value;
+    // console.log(sectorSelected);
 
+    // filter and generate pie data
+    doublePieDateAfterProcessing = generateDoublePieData(sectorSelected, dateSelected);
+    
     // update pie chart view
 
 });
 
 // listen to date range changes
 d3.selectAll("input#range").on("change", function(){
-    let selectedDate = dateRangeTransfer(this.value)
-    console.log(selectedDate)
+    dateSelected = dateRangeTransfer(this.value)
+    // console.log(dateSelected)
 
-    // filter data
+    // filter and generate pie data
+    doublePieDateAfterProcessing = generateDoublePieData(sectorSelected, dateSelected);
+
 
     // update pie chart view
 
 });
 
 // date range transfer helper method
+// eg. 13 => Jan-20; 7 => Jul-19
 const dateRangeTransfer = function(value) {
     let months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
@@ -75,3 +87,43 @@ const dateRangeTransfer = function(value) {
     return months[value-1] + "-"+ year
 }
 
+// filter is an attribute name
+// selected is the value should be filter
+const dataFilter = function (data, filter, selected) {
+    return data.filter(function(data){
+        return data[filter] === selected;
+    })
+
+}
+
+// flat array into one obj
+// eg. generate {Agriculture: 1022923, Mining oil and gas: 2495575,...}
+const generatePieData = function (arr) {
+    let obj = {};
+    arr.forEach(function(entry) {
+        obj[entry.Key] = entry.Amount;
+    });
+    // console.log(obj);
+    return obj;
+
+}
+
+const generateDoublePieData = function (sectorSelected, dateSelected) {
+    // wage
+    // filter
+    let wagesDataAfterFilter = dataFilter(originalWagesData, "Sector", sectorSelected);
+    wagesDataAfterFilter = dataFilter(wagesDataAfterFilter, "Date", dateSelected);
+    // flat
+    wagesDataAfterFilter = generatePieData(wagesDataAfterFilter);
+
+    // hour
+    // filter
+    let hoursDataAfterFilter = dataFilter(originalHoursData, "Sector", sectorSelected);
+    hoursDataAfterFilter = dataFilter(hoursDataAfterFilter, "Date", dateSelected);
+    // flat
+    hoursDataAfterFilter = generatePieData(hoursDataAfterFilter);
+
+    // combine double
+    console.log([wagesDataAfterFilter, hoursDataAfterFilter])
+    return [wagesDataAfterFilter, hoursDataAfterFilter]
+}

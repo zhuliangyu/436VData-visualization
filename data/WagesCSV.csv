@@ -263,30 +263,30 @@ Sep-20,6637439,Educational services,Services-producing sector,Education,FALSE
 Oct-20,6910110,Educational services,Services-producing sector,Education,FALSE
 Nov-20,7023194,Educational services,Services-producing sector,Education,FALSE
 Dec-20,7153460,Educational services,Services-producing sector,Education,FALSE
-Jan-19,8392845,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Feb-19,8370447,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Mar-19,8413346,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Apr-19,8516585,Health care and social assistance,Services-producing sector,Health care ,FALSE
-May-19,8675222,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Jun-19,8810856,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Jul-19,8809663,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Aug-19,8726913,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Sep-19,8703510,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Oct-19,8715048,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Nov-19,8784629,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Dec-19,9022092,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Jan-20,8853000,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Feb-20,8859331,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Mar-20,8717446,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Apr-20,8412918,Health care and social assistance,Services-producing sector,Health care ,FALSE
-May-20,8468508,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Jun-20,8879184,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Jul-20,9102685,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Aug-20,9304831,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Sep-20,9429334,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Oct-20,9358933,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Nov-20,9398612,Health care and social assistance,Services-producing sector,Health care ,FALSE
-Dec-20,9677063,Health care and social assistance,Services-producing sector,Health care ,FALSE
+Jan-19,8392845,Health care and social assistance,Services-producing sector,Health care,FALSE
+Feb-19,8370447,Health care and social assistance,Services-producing sector,Health care,FALSE
+Mar-19,8413346,Health care and social assistance,Services-producing sector,Health care,FALSE
+Apr-19,8516585,Health care and social assistance,Services-producing sector,Health care,FALSE
+May-19,8675222,Health care and social assistance,Services-producing sector,Health care,FALSE
+Jun-19,8810856,Health care and social assistance,Services-producing sector,Health care,FALSE
+Jul-19,8809663,Health care and social assistance,Services-producing sector,Health care,FALSE
+Aug-19,8726913,Health care and social assistance,Services-producing sector,Health care,FALSE
+Sep-19,8703510,Health care and social assistance,Services-producing sector,Health care,FALSE
+Oct-19,8715048,Health care and social assistance,Services-producing sector,Health care,FALSE
+Nov-19,8784629,Health care and social assistance,Services-producing sector,Health care,FALSE
+Dec-19,9022092,Health care and social assistance,Services-producing sector,Health care,FALSE
+Jan-20,8853000,Health care and social assistance,Services-producing sector,Health care,FALSE
+Feb-20,8859331,Health care and social assistance,Services-producing sector,Health care,FALSE
+Mar-20,8717446,Health care and social assistance,Services-producing sector,Health care,FALSE
+Apr-20,8412918,Health care and social assistance,Services-producing sector,Health care,FALSE
+May-20,8468508,Health care and social assistance,Services-producing sector,Health care,FALSE
+Jun-20,8879184,Health care and social assistance,Services-producing sector,Health care,FALSE
+Jul-20,9102685,Health care and social assistance,Services-producing sector,Health care,FALSE
+Aug-20,9304831,Health care and social assistance,Services-producing sector,Health care,FALSE
+Sep-20,9429334,Health care and social assistance,Services-producing sector,Health care,FALSE
+Oct-20,9358933,Health care and social assistance,Services-producing sector,Health care,FALSE
+Nov-20,9398612,Health care and social assistance,Services-producing sector,Health care,FALSE
+Dec-20,9677063,Health care and social assistance,Services-producing sector,Health care,FALSE
 Jan-19,508489,Military,Services-producing sector,Military,FALSE
 Feb-19,513888,Military,Services-producing sector,Military,FALSE
 Mar-19,518565,Military,Services-producing sector,Military,FALSE
@@ -359,27 +359,27 @@ Sep-20,1756183,Provincial and territorial government public administration,Servi
 Oct-20,1784138,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
 Nov-20,1780704,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
 Dec-20,1789163,Provincial and territorial government public administration,Services-producing sector,Provincial government,FALSE
-Jan-19,2219292,Local government public administration,Services-producing sector,Local government ,FALSE
-Feb-19,2218999,Local government public administration,Services-producing sector,Local government ,FALSE
-Mar-19,2213020,Local government public administration,Services-producing sector,Local government ,FALSE
-Apr-19,2211523,Local government public administration,Services-producing sector,Local government ,FALSE
-May-19,2328217,Local government public administration,Services-producing sector,Local government ,FALSE
-Jun-19,2403471,Local government public administration,Services-producing sector,Local government ,FALSE
-Jul-19,2473201,Local government public administration,Services-producing sector,Local government ,FALSE
-Aug-19,2403694,Local government public administration,Services-producing sector,Local government ,FALSE
-Sep-19,2330247,Local government public administration,Services-producing sector,Local government ,FALSE
-Oct-19,2329392,Local government public administration,Services-producing sector,Local government ,FALSE
-Nov-19,2388461,Local government public administration,Services-producing sector,Local government ,FALSE
-Dec-19,2419009,Local government public administration,Services-producing sector,Local government ,FALSE
-Jan-20,2349833,Local government public administration,Services-producing sector,Local government ,FALSE
-Feb-20,2321428,Local government public administration,Services-producing sector,Local government ,FALSE
-Mar-20,2284284,Local government public administration,Services-producing sector,Local government ,FALSE
-Apr-20,2227764,Local government public administration,Services-producing sector,Local government ,FALSE
-May-20,2235930,Local government public administration,Services-producing sector,Local government ,FALSE
-Jun-20,2331091,Local government public administration,Services-producing sector,Local government ,FALSE
-Jul-20,2406724,Local government public administration,Services-producing sector,Local government ,FALSE
-Aug-20,2512392,Local government public administration,Services-producing sector,Local government ,FALSE
-Sep-20,2452786,Local government public administration,Services-producing sector,Local government ,FALSE
-Oct-20,2422298,Local government public administration,Services-producing sector,Local government ,FALSE
-Nov-20,2491302,Local government public administration,Services-producing sector,Local government ,FALSE
-Dec-20,2510014,Local government public administration,Services-producing sector,Local government ,FALSE
+Jan-19,2219292,Local government public administration,Services-producing sector,Local government,FALSE
+Feb-19,2218999,Local government public administration,Services-producing sector,Local government,FALSE
+Mar-19,2213020,Local government public administration,Services-producing sector,Local government,FALSE
+Apr-19,2211523,Local government public administration,Services-producing sector,Local government,FALSE
+May-19,2328217,Local government public administration,Services-producing sector,Local government,FALSE
+Jun-19,2403471,Local government public administration,Services-producing sector,Local government,FALSE
+Jul-19,2473201,Local government public administration,Services-producing sector,Local government,FALSE
+Aug-19,2403694,Local government public administration,Services-producing sector,Local government,FALSE
+Sep-19,2330247,Local government public administration,Services-producing sector,Local government,FALSE
+Oct-19,2329392,Local government public administration,Services-producing sector,Local government,FALSE
+Nov-19,2388461,Local government public administration,Services-producing sector,Local government,FALSE
+Dec-19,2419009,Local government public administration,Services-producing sector,Local government,FALSE
+Jan-20,2349833,Local government public administration,Services-producing sector,Local government,FALSE
+Feb-20,2321428,Local government public administration,Services-producing sector,Local government,FALSE
+Mar-20,2284284,Local government public administration,Services-producing sector,Local government,FALSE
+Apr-20,2227764,Local government public administration,Services-producing sector,Local government,FALSE
+May-20,2235930,Local government public administration,Services-producing sector,Local government,FALSE
+Jun-20,2331091,Local government public administration,Services-producing sector,Local government,FALSE
+Jul-20,2406724,Local government public administration,Services-producing sector,Local government,FALSE
+Aug-20,2512392,Local government public administration,Services-producing sector,Local government,FALSE
+Sep-20,2452786,Local government public administration,Services-producing sector,Local government,FALSE
+Oct-20,2422298,Local government public administration,Services-producing sector,Local government,FALSE
+Nov-20,2491302,Local government public administration,Services-producing sector,Local government,FALSE
+Dec-20,2510014,Local government public administration,Services-producing sector,Local government,FALSE
