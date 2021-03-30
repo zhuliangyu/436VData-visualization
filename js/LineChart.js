@@ -45,39 +45,44 @@ class LineChart {
     .text('Trails');
 
     const dataSet = this.data;
-    const timeConv = d3.timeParse("%d-%b-%Y");
+    const timeConv = d3.timeParse("%b");
     var slices = dataSet.columns.slice(1).map(function(id) {
       return {
           id: id,
           values: dataSet.map(function(d){
+
               return {
-                  date: timeConv(d.date),
+                  date: d.date,
                   measurement: +d[id]
               };
           })
       };
     });
-
+    const CPIset = [slices[1],slices[3]];
+    const incomeset= [slices[2],slices[4]];
     
     //----------------------------SCALES----------------------------//
-    const xScale = d3.scaleTime().range([0,vis.width]);
+    const xScale = d3.scaleLinear().range([0,vis.width-10]);
     const yScale = d3.scaleLinear().rangeRound([vis.height/2, 0]);
-    xScale.domain(d3.extent(dataSet, function(d){
-        return timeConv(d.date)}));
-    yScale.domain([(0), d3.max(slices, function(c) {
-        return d3.max(c.values, function(d) {
-            return d.measurement + 4; });
-            })
-        ]);
+    const yScale2 = d3.scaleLinear().rangeRound([vis.height/2, 0]);
+    xScale.domain([1,12]);
+    yScale.domain([(0), 10]);
+
+    yScale2.domain([(0), 50
+      ]);
 
     //-----------------------------AXES-----------------------------//
     const yaxis = d3.axisLeft()
         .ticks((slices[0].values).length)
         .scale(yScale);
 
+    const yaxis2 = d3.axisLeft()
+    .ticks((slices[0].values).length)
+    .scale(yScale2);
+
     const xaxis = d3.axisBottom()
-        .ticks(d3.timeDay.every(1))
-        .tickFormat(d3.timeFormat('%b %d'))
+        .ticks(12)
+      
         .scale(xScale);
 
 
@@ -88,7 +93,7 @@ class LineChart {
 
     const line2 = d3.line()
     .x(function(d) { return xScale(d.date); })
-    .y(function(d) { return yScale(d.measurement)+ vis.height/2; }); 
+    .y(function(d) { return yScale2(d.measurement)+ vis.height/2; }); 
 
     let id = 0;
     const ids = function () {
@@ -110,31 +115,35 @@ class LineChart {
     .attr("dy", ".75em")
     .attr("y", 6)
     .style("text-anchor", "end")
-    .text("Frequency");
+    .text("CPI");
 
     vis.chart.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0," + vis.height/2 + ")")
-    .call(yaxis)
+    .call(yaxis2)
     .append("text")
     .attr("transform", "rotate(-90)")
     .attr("dy", ".75em")
     .attr("y", 6)
     .style("text-anchor", "end")
-    .text("Frequency");
+    .text("wage");
 
     //----------------------------LINES-----------------------------//
+ 
+   
     const lines =  vis.chart.selectAll("lines")
-        .data(slices)
+        .data(CPIset)
         .enter()
         .append("g");
 
         lines.append("path")
         .attr("class", ids)
-        .attr("d", function(d) { return line(d.values); });
+        .attr("d", function(d) { 
+          
+          return line(d.values); });
 
     const linest =  vis.chart.selectAll("lines")
-    .data(slices)
+    .data(incomeset)
     .enter()
     .append("g");
 
@@ -142,17 +151,17 @@ class LineChart {
     .attr("class", ids)
     .attr("d", function(d) { return line2(d.values); });
 
-        // lines.append("text")
-        // .attr("class","serie_label")
-        // .datum(function(d) {
-        //     return {
-        //         id: d.id,
-        //         value: d.values[d.values.length - 1]}; })
-        // .attr("transform", function(d) {
-        //         return "translate(" + (xScale(d.value.date)-40)  
-        //         + "," + (yScale(d.value.measurement) + 5 ) + ")"; })
-        // .attr("x", 5)
-        // .text(function(d) { return ("Serie ") + d.id; });
+        lines.append("text")
+        .attr("class","serie_label")
+        .datum(function(d) {
+            return {
+                id: d.id,
+                value: d.values[d.values.length - 1]}; })
+        .attr("transform", function(d) {
+                return "translate(" + (xScale(d.value.date)-40)  
+                + "," + (yScale(d.value.measurement) + 5 ) + ")"; })
+        .attr("x", 5)
+        .text(function(d) { return  d.id; });
 
 
 
@@ -180,13 +189,13 @@ class LineChart {
     .style("opacity", "0");
     
   var lineS = document.getElementsByClassName('line');
+  
 
   var mousePerLine = mouseG.selectAll('.mouse-per-line')
-    .data(slices)
+    .data([slices[1],slices[2],slices[3],slices[4]])
     .enter()
     .append("g")
     .attr("class", "mouse-per-line")
-
 
   mousePerLine.append("circle")
     .attr("r", 7)
@@ -253,9 +262,14 @@ class LineChart {
           else if (pos.x < mouse[0]) beginning = target;
           else break; //position found
         }
-        
-        d3.select(this).select('text')
-          .text(yScale.invert(pos.y).toFixed(2));
+        if(i == 0 || i == 1) {
+          d3.select(this).select('text')
+          .text( CPIset[i].id + "  " +yScale.invert(pos.y).toFixed(2));
+        }else{
+          d3.select(this).select('text')
+          .text(incomeset[i-2].id + "  "+(50+ yScale2.invert(pos.y)).toFixed(2));
+        }
+       
         
         return "translate(" + mouse[0]+ "," + (pos.y)+")";
       });
