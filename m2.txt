@@ -1,0 +1,32 @@
+Design Rational:
+当考虑如何衡量一个行业是否受疫情的强烈影响, 我们认为给员工工资数和工作小时数能准确体现行业的收影响程度.
+Data type: table
+
+Attribute:
+Date: categorical, cardinality = 24, from 2019-Jan to 2020-Dec
+Sectors: categorical, cardinality = 2
+Industries: categorical, cardinality = 16
+Amount(working hours, wages): quantitative
+
+Task
+在选定的月份, 通过读取不同行业中工资金额与总数的占比, 比较不同行业工资差别.
+在选定的月份, 通过读取不同行业中工作小时数与总小时数占比, 比较不同行业工作小时数的差别.
+
+顶部设计时间拉动选择器, 可以让用户选择2019年1月份到2020年12月份的全加拿大统计数据.
+
+由于统计数据将行业分为16个大类, 不利于在一个pie chart上显示所有的分类. 我们选择使用filter的方法来解决分类过多的问题.
+我们将行业分为2维度, 一个是服务提供, 一个是产品生产. 在设计中, 我们使用radio button 让客户对原始数据进行filter, 降低展示行业的数量.
+
+
+我们创新的设计了一个双层donet pie chart,因为我们想同时比较工资发放数额和工作小时数之间的关系. 外圈展示的是工资的数据, 内圈展示的工作小时数的数据. 我们通过内外圈来同时展示工资和小时数的part to whole 关系.
+考虑到某些行业存在工作小时数很高, 但是单位小时工资数比较低造成总工资偏低的情况, 我们同时从两个维度- 时间维度和工资维度来分析哪些行业的工作受到疫情的更大的影响. 这种影响可能是正向的, 比如医疗行业. 也可能是负向的, 比如餐饮旅游行业.
+
+Changes since proposal:
+donut chart 和Linechart不再有相互影响的关系. 因为Linechart分析的是不同加拿大省份的数据关系. 但是donut chart分析的是不同月份的数据. 由于工资的原始数据缺少省份的数据, 所以donut chart只能分析加拿大全国统计数据.
+
+Link to Data source:
+
+Data preprocessing:
+由于日期数据在attribute并且各种行业在item, 我们首先做了行列转置的操作. 经过变换后, 每一行代表一个月份的的数据.
+其次, 将不同的行业数据拆分成不同的item, 并且加上sector分类属性.
+最后为了展示区分行数据, 增加一个unique key的属性.

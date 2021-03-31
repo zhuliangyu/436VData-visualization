@@ -1,0 +1,9 @@
+run server
+browser-sync start --server --files "index.html" "js/*.js" "css/*.css"
+
+date range
+https://css-tricks.com/value-bubbles-for-range-inputs/
+
+
+data[0] = outside = wages
+data[1] = inside = hours

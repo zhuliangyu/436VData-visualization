@@ -4,17 +4,19 @@
     <title>placeHolder</title>
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
     <link rel="stylesheet" href="css/pieStyle.css">
+<!--    <link rel="stylesheet" href="css/style.css">-->
 </head>
 <body>
     <h1>PieChart</h1>
+    <!-- UI radio filter-->
     <div style="background-color: palegoldenrod">
         <form id="pieFilter">
-
             <input class="pieInput" type="radio" name="stack" value="Goods-producing sector" checked="checked">Goods-producing sector<br>
             <input class="pieInput" type="radio" name="stack" value="Services-producing sector" >Services-producing sector<br>
         </form>
     </div>
 
+    <!-- UI timeline range  -->
     <div class="range-wrap" style="margin-top: 30px">
         <div class="range-value" id="rangeV"></div>
         <input id="range" type="range" min="1" max="24" value="1" step="1">
@@ -22,10 +24,16 @@
 
     <div id="pieChartNoLabel"></div>
 
+    <h1>LineChart</h1>
+    <div><svg id="LineChart"></svg></div>
+    <div id="tooltip"></div>
+
+
+
     <script src="js/d3.v6.min.js"></script>
     <script src="js/PieChart.js"></script>
     <script src="js/LineChart.js"></script>
     <script src="js/GeoChart.js"></script>
-    <script src="js/mainzhu.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
