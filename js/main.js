@@ -18,7 +18,7 @@ const
         const
             newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
             newPosition = 10 - (newValue * 0.2);
-        rangeV.innerHTML = `<span>${dateRangeTransfer(range.value)}</span>`;
+        rangeV.innerHTML = `<span class="pie">${dateRangeTransfer(range.value)}</span>`;
         rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
     };
 document.addEventListener("DOMContentLoaded", setValue);
@@ -51,6 +51,13 @@ Promise.all([
     lineChart = new LineChart({
         parentElement: '#LineChart',
     }, files[2]);
+
+    geoChart = new GeoChart(
+        {
+            parentElement: "#GeoChart",
+        },
+        files[2]
+    );
 
 }).catch(function(err) {
     console.error(err, err.stack);
