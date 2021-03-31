@@ -233,7 +233,7 @@ class LineChart {
             .on('mousemove', function(event) { // mouse moving over canvas
 
                 var mouse = [];
-                mouse[0]= event.pageX - 415;
+                mouse[0]= event.pageX -80;
                 mouse[1]=event.pageY;
                 d3.select(".mouse-line")
                     .attr("d", function() {
