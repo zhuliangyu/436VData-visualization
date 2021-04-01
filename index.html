@@ -3,23 +3,38 @@
 <head>
     <title>placeHolder</title>
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_kira.css">
+    <link rel="stylesheet" href="css/pieStyle.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>placeHolder</h1>
+    <h1>COVID-19 Case Per Month In CANADA</h1>
+    <div id="slider"> Month</div>
+    <div class="margin-top"><svg id="GeoChart"></svg></div>
 
-    placeHolder: 
-    <div class="container">
-        <div class="margin-top"><svg id="GeoChart"></svg></div>
-    </div>
-    <div class="container">
-        <div class="margin-right"><svg id="PieChart"></svg></div>
-        <div><svg id="LineChart"></svg></div>
+    <h1>PieChart</h1>
+    <!-- UI radio filter-->
+    <div style="background-color: palegoldenrod">
+        <form id="pieFilter">
+            <input class="pieInput" type="radio" name="stack" value="Goods-producing sector" checked="checked">Goods-producing sector<br>
+            <input class="pieInput" type="radio" name="stack" value="Services-producing sector" >Services-producing sector<br>
+        </form>
     </div>
 
+    <!-- UI timeline range  -->
+    <div class="range-wrap pie" style="margin-top: 30px">
+        <div class="range-value pie" id="rangeV"></div>
+        <input id="range" class="pie" type="range" min="1" max="24" value="1" step="1">
+    </div>
+
+    <div id="pieChartNoLabel"></div>
+
+    <h1>LineChart</h1>
+    <div><svg id="LineChart"></svg></div>
     <div id="tooltip"></div>
-    <!-- todo: add visualizations -->
-    
+
+
+
     <script src="js/d3.v6.min.js"></script>
     <script src="js/PieChart.js"></script>
     <script src="js/LineChart.js"></script>
