@@ -1,8 +1,8 @@
 class GeoChart {
   constructor(_config, data) {
     this.parentElement = _config.parentElement;
-    this.width = 800;
-    this.height = 600;
+    this.width = 1600;
+    this.height = 1000;
     this.initSvg();
   }
 
