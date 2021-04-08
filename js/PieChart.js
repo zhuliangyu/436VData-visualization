@@ -74,7 +74,10 @@ class PieChart {
     if (updatedData !== null && updatedData !== undefined) {
       vis.data = updatedData;
     }
-    d3.selectAll("path").remove()
+
+    d3.selectAll(".pieOut").remove()
+    d3.selectAll(".pieIn").remove()
+
     vis.renderVis();
   }
 
@@ -118,11 +121,12 @@ class PieChart {
 
     // outside circle
     vis.svg
-        .selectAll('allSlices')
+        .selectAll('allSlices.pieOut')
         .data(data_ready_0)
         // .enter()
         // .append('path')
         .join('path')
+        .attr('class', 'pieOut')
         .attr('d', arc_0)
         .attr('fill', function (d) {
           return (vis.color(d.data.key))
@@ -143,11 +147,12 @@ class PieChart {
 
     // inside circle
     vis.svg
-        .selectAll('allSlices')
+        .selectAll('allSlices.pieIn')
         .data(data_ready_1)
         // .enter()
         // .append('path')
         .join('path')
+        .attr('class', 'pieIn')
         .attr('d', arc_1)
         .attr('fill', function (d) {
           // console.log(d)
