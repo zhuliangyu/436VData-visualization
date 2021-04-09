@@ -1,4 +1,5 @@
 class LineChart {
+    
 
     constructor(_config, _data) {
         this.config = {
@@ -41,33 +42,40 @@ class LineChart {
             .text('Trails');
 
         
+        
         this.updateVis("all");
         
     }
 
 
 
-    updateVis(selectedProvince, selectedYear = 2020) {
-        if(!this.selectedProvince) {
+    updateVis(selectedProvince, selectedYear) {
+        if(this.selectedProvince === undefined) {
+           
             this.selectedProvince  = selectedProvince;
+            
         }else{
             if (this.selectedProvince === selectedProvince) {
                 this.selectedProvince = "all";
+            }else{
+                this.selectedProvince = selectedProvinces
             }
         }
 
-        if(!this.selectedYear) {
+        if(this.selectedYear === undefined) {
             this.selectedYear  = selectedYear;
         }else{
             if (this.selectedYear === selectedYear) {
-                this.selectedYear = null;
+                this.selectedYear = undefined;
+            }else{
+                this.selectedYear  = selectedYear;
             }
         }
-
-
+       
         let vis = this;
 
-        vis.svg.selectAll("lines").remove();
+        vis.chart.selectAll("path.line").remove()
+        vis.chart.selectAll("circle").remove()
         // Prepar data and scales
         let dataSet  = this.data.filter((item) => {
             return item.provence === this.selectedProvince;
@@ -87,8 +95,7 @@ class LineChart {
         });
         const CPIset = [slices[3],slices[4]];
         const incomeset= [slices[1],slices[2]];
-        console.log(CPIset)
-        console.log(incomeset)
+        
 
         //----------------------------SCALES----------------------------//
         const xScale = d3.scaleLinear().range([0,vis.width-10]);
@@ -126,12 +133,13 @@ class LineChart {
 
         let id = 0;
         const ids = function (e) {
-            console.log(e)
-            if(e.id === "Y1_Income(2019)" && this.selectedYear === 2019){
+          
+            if(e.id === "Y1_Income(2019)" && vis.selectedYear === 2019){
                 return "line-active line line-"+id++;
             }
 
-            if(e.id === "Y2_Income(2020)" && this.selectedYear === 2020){
+            if(e.id === "Y2_Income(2020)" && vis.selectedYear === 2020){
+              
                 return "line-active line line-"+id++;
             }
             return "line line-"+id++;
@@ -177,24 +185,26 @@ class LineChart {
             .text("Time(Month)");
 
         //----------------------------LINES-----------------------------//
-        const lines =  vis.chart.selectAll("lines")
+        let lines =  vis.chart.selectAll("lines")
             .data(CPIset)
             .enter()
-            .append("g");
+            .append("g")
 
-        lines.append("path")
+            .append("path")
             .attr("class", ids)
+            .attr("id", "id")
             .attr("d", function(d) {
 
                 return line(d.values); });
 
-        const linest =  vis.chart.selectAll("lines")
+        let linest =  vis.chart.selectAll("lines")
             .data(incomeset)
             .enter()
-            .append("g");
+            .append("g")
 
-        linest.append("path")
+           .append("path")
             .attr("class", ids)
+            .attr("id", "id")
             .attr("d", function(d) { return line2(d.values); });
 
         lines.append("text")
@@ -220,6 +230,7 @@ class LineChart {
 
         var lineS = document.getElementsByClassName('line');
         var mousePerLine = mouseG.selectAll('.mouse-per-line')
+            .attr("class","line")
             .data([slices[1],slices[2],slices[3],slices[4]])
             .enter()
             .append("g")
@@ -227,6 +238,7 @@ class LineChart {
 
         mousePerLine.append("circle")
             .attr("r", 7)
+            .attr("class","circle")
             .style("stroke", function(d) {
                 return "red"
             })
@@ -271,6 +283,9 @@ class LineChart {
                     });
                 d3.selectAll(".mouse-per-line")
                     .attr("transform", function(d, i) {
+                        if(!lineS[i]) {
+                            return;
+                        }
                         var beginning = 0,
                             end = lineS[i].getTotalLength(),
                             target = null;
