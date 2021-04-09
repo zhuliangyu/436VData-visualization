@@ -8,7 +8,7 @@ class PieChart {
   constructor(_config,_data, _year) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: 500,
+      containerWidth: 900,
       containerHeight: 500,
       margin: {top: 15, right: 15, bottom: 20, left: 25},
       tooltipPadding: _config.tooltipPadding || 15
@@ -119,10 +119,16 @@ class PieChart {
     var arc_0 = d3.arc()
         .innerRadius(vis.radius_0 * 0.7) // This is the size of the donut hole
         .outerRadius(vis.radius_0 * 1)
+    var arc_0_outerArc = d3.arc()
+          .innerRadius(vis.radius_0 * 0.9)
+          .outerRadius(vis.radius_0 * 0.9)
 
     var arc_1 = d3.arc()
         .innerRadius(vis.radius_1 * 0.6) // This is the size of the donut hole
         .outerRadius(vis.radius_1 * 1)
+    var arc_1_outerArc = d3.arc()
+          .innerRadius(vis.radius_1 * 0.9)
+          .outerRadius(vis.radius_1 * 0.9)
 
     // outside circle
     vis.svg
@@ -152,6 +158,65 @@ class PieChart {
           deleteLabel()
         })
 
+        // outside label
+      vis.svg
+          .selectAll('allPolylines.pieOut')
+          .data(data_ready_0)
+          .enter()
+          .append('polyline')
+          .attr("stroke", "black")
+          .attr('class', 'pieOut')
+          .style("fill", "none")
+          .attr("stroke-width", 1)
+          .attr('points', function (d) {
+              if (d.index === 0){
+              // if (d.index === data_ready.length - 1){
+              //     console.log(d)
+                  var posA = arc_0.centroid(d) // line insertion in the slice
+                  var posB = arc_0_outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
+                  var posC = arc_0_outerArc.centroid(d); // Label position = almost the same as posB
+                  var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
+                  posC[0] = vis.radius_0 * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
+                  return [posA, posB, posC]
+              }
+
+          })
+      vis.svg
+          .selectAll('allLabels.pieOut')
+          .data(data_ready_0)
+          .enter()
+          .append('text')
+          .attr('class', 'pieOut')
+          .text(function (d) {
+              if (d.index === 0) {
+              // if (d.index === data_ready.length - 1){
+                  // return d.data.key
+                  return "Wages in different industries"
+              }
+          })
+          .attr('transform', function (d) {
+              if (d.index === 0) {
+              // if (d.index === data_ready.length - 1){
+                  var pos = arc_0_outerArc.centroid(d);
+
+                  var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+
+                  pos[0] = vis.radius_0 * 0.99 * (midangle < Math.PI ? 1 : -1);
+
+                  return 'translate(' + pos + ')';
+              }
+
+          })
+          .style('text-anchor', function (d) {
+              // if (d.index === 0) {
+              if (d.index === data_ready_0.length - 1){
+                  var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                  return (midangle < Math.PI ? 'start' : 'end')
+              }
+          })
+
+
+
     // inside circle
     vis.svg
         .selectAll('allSlices.pieIn')
@@ -180,6 +245,65 @@ class PieChart {
         .on("mouseleave", function (event, d) {
           deleteLabel()
         })
+
+      // inside label
+      vis.svg
+          .selectAll('allPolylines.pieIn')
+          .data(data_ready_1)
+          .enter()
+          .append('polyline')
+          .attr("stroke", "black")
+          .attr('class', 'pieIn')
+          .style("fill", "none")
+          .attr("stroke-width", 1)
+          .attr('points', function (d) {
+              // if (d.index === 0){
+                  if (d.index === data_ready_1.length - 1){
+                  //     console.log(d)
+                  var posA = arc_1.centroid(d) // line insertion in the slice
+                  var posB = arc_1_outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
+                  var posC = arc_1_outerArc.centroid(d); // Label position = almost the same as posB
+                  var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
+                  posC[0] = vis.radius_0 * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
+                  return [posA, posB, posC]
+              }
+
+          })
+      vis.svg
+          .selectAll('allLabels.pieIn')
+          .data(data_ready_1)
+          .enter()
+          .append('text')
+          .attr('class', 'pieIn')
+          .text(function (d) {
+              // if (d.index === 0) {
+                  if (d.index === data_ready_1.length - 1){
+                  // return d.data.key
+                  return "Working Hours in different industries"
+              }
+          })
+          .attr('transform', function (d) {
+              // if (d.index === 0) {
+                  if (d.index === data_ready_1.length - 1){
+                  var pos = arc_1_outerArc.centroid(d);
+
+                  var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+
+                  pos[0] = vis.radius_1 * 0.99 * (midangle < Math.PI ? 1 : -1) - 70;
+
+                  return 'translate(' + pos + ')';
+              }
+
+          })
+          .style('text-anchor', function (d) {
+              // if (d.index === 0) {
+              if (d.index === data_ready_1.length - 1){
+                  var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                  return (midangle < Math.PI ? 'start' : 'end')
+              }
+          })
+
+
 
     // inside text label
     let generateLabel = function (inputText, yOffset){
