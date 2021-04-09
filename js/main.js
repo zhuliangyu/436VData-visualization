@@ -9,6 +9,7 @@ let originalWagesData;
 let dateSelected = "Jan-19";
 let sectorSelected = "Goods-producing sector";
 let doublePieDateAfterProcessing;
+let pieChartYearSelected = 2019;
 // date range selector init
 const
     range = document.getElementById('range'),
@@ -45,7 +46,7 @@ Promise.all([
 
     pieChart = new PieChart({
         parentElement: '#PieChart',
-    }, doublePieDateAfterProcessing);
+    }, doublePieDateAfterProcessing, pieChartYearSelected);
 
     lineChart = new LineChart({
         parentElement: '#LineChart',
@@ -84,7 +85,7 @@ d3.selectAll("input#range").on("change", function(){
     doublePieDateAfterProcessing = generateDoublePieData(sectorSelected, dateSelected);
 
     // update pie chart view
-    pieChart.updateVis(doublePieDateAfterProcessing);
+    pieChart.updateVis(doublePieDateAfterProcessing, pieChartYearSelected);
 });
 
 // date range transfer helper method
@@ -93,9 +94,11 @@ const dateRangeTransfer = function(value) {
     let months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
     let year = 19;
+    pieChartYearSelected = 2019
     if (value > 12) {
         value = value - 12
         year = 20
+        pieChartYearSelected = 2020
     }
     return months[value-1] + "-"+ year
 }
@@ -137,7 +140,7 @@ const generateDoublePieData = function (sectorSelected, dateSelected) {
     hoursDataAfterFilter = generatePieData(hoursDataAfterFilter);
 
     // combine double
-    console.log([wagesDataAfterFilter, hoursDataAfterFilter])
+    // console.log([wagesDataAfterFilter, hoursDataAfterFilter])
     return [wagesDataAfterFilter, hoursDataAfterFilter]
 }
 

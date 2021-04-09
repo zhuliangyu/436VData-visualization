@@ -5,7 +5,7 @@ class PieChart {
    * @param {Object}
    * @param {Array}
    */
-  constructor(_config,_data) {
+  constructor(_config,_data, _year) {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 500,
@@ -14,6 +14,7 @@ class PieChart {
       tooltipPadding: _config.tooltipPadding || 15
     }
     this.data = _data;
+    this.year = _year;
     this.initVis();
   }
 
@@ -69,10 +70,14 @@ class PieChart {
   }
 
 
-  updateVis(updatedData) {
+  updateVis(updatedData, updatePieChartYearSelected) {
     let vis = this;
     if (updatedData !== null && updatedData !== undefined) {
       vis.data = updatedData;
+    }
+
+    if (updatePieChartYearSelected !== null && updatePieChartYearSelected !== undefined) {
+        vis.year = updatePieChartYearSelected;
     }
 
     d3.selectAll(".pieOut").remove()
@@ -140,6 +145,8 @@ class PieChart {
           generateLabel(d.data.key, 0);
           generateLabel(d.data.value, 40)
           // d3.event.stopPropagation();
+            updateLineChartbyWageTime(vis.year);
+
         })
         .on("mouseleave", function (event, d) {
           deleteLabel()
@@ -167,6 +174,8 @@ class PieChart {
           generateLabel(d.data.key, 0)
           generateLabel(d.data.value, 40)
           // d3.event.stopPropagation();
+            updateLineChartbyWageTime(vis.year);
+
         })
         .on("mouseleave", function (event, d) {
           deleteLabel()
