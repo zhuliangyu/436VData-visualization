@@ -48,12 +48,29 @@ class LineChart {
 
 
     updateVis(selectedProvince, selectedYear = 2020) {
+        if(!this.selectedProvince) {
+            this.selectedProvince  = selectedProvince;
+        }else{
+            if (this.selectedProvince === selectedProvince) {
+                this.selectedProvince = "all";
+            }
+        }
+
+        if(!this.selectedYear) {
+            this.selectedYear  = selectedYear;
+        }else{
+            if (this.selectedYear === selectedYear) {
+                this.selectedYear = null;
+            }
+        }
+
+
         let vis = this;
 
         vis.svg.selectAll("lines").remove();
         // Prepar data and scales
         let dataSet  = this.data.filter((item) => {
-            return item.provence === selectedProvince;
+            return item.provence === this.selectedProvince;
         })
         var slices = this.data.columns.slice(1).map(function(id) {
             return {
@@ -110,11 +127,11 @@ class LineChart {
         let id = 0;
         const ids = function (e) {
             console.log(e)
-            if(e.id === "Y1_Income(2019)" && selectedYear === 2019){
+            if(e.id === "Y1_Income(2019)" && this.selectedYear === 2019){
                 return "line-active line line-"+id++;
             }
 
-            if(e.id === "Y2_Income(2020)" && selectedYear === 2020){
+            if(e.id === "Y2_Income(2020)" && this.selectedYear === 2020){
                 return "line-active line line-"+id++;
             }
             return "line line-"+id++;
@@ -146,7 +163,18 @@ class LineChart {
             .attr("dy", ".75em")
             .attr("y", 6)
             .style("text-anchor", "end")
-            .text("wage");
+            .text("Aveage Wage Value (CAD/h)");
+        
+        vis.chart.append("g")
+            .attr("class", "axis")
+            .attr("transform", "translate(" + vis.width +", "+ (-20 + vis.height/2)+")")
+            .call(xaxis)
+            .append("text")
+            .attr("transform", "rotate(0)")
+            .attr("dy", ".75em")
+            .attr("y", 6)
+            .style("text-anchor", "end")
+            .text("Time(Month)");
 
         //----------------------------LINES-----------------------------//
         const lines =  vis.chart.selectAll("lines")
@@ -262,7 +290,7 @@ class LineChart {
                                 .text( CPIset[i].id + "  " +yScale.invert(pos.y).toFixed(2));
                         }else{
                             d3.select(this).select('text')
-                                .text(incomeset[i-2].id + "  "+(50+ yScale2.invert(pos.y)).toFixed(2));
+                                .text(incomeset[i-2].id + "  "+(9 + yScale2.invert(pos.y)).toFixed(2));
                         }
 
 
