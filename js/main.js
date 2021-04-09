@@ -9,6 +9,8 @@ let originalWagesData;
 let dateSelected = "Jan-19";
 let sectorSelected = "Goods-producing sector";
 let doublePieDateAfterProcessing;
+let selectedProvinceGlobal = "all";
+let selectedYearGlobal;
 // date range selector init
 const
     range = document.getElementById('range'),
@@ -142,9 +144,11 @@ const generateDoublePieData = function (sectorSelected, dateSelected) {
 }
 
 const updateLineChartbyProvince = (selectedProvince = "all") => {
-    lineChart.updateVis(selectedProvince);
+    selectedProvinceGlobal = selectedProvince;
+    lineChart.updateVis(selectedProvince, selectedYearGlobal);
 }
 
 const updateLineChartbyWageTime = (selectedYear) => {
-    lineChart.updateVis(null, selectedYear);
+    selectedYearGlobal = selectedYear;
+    lineChart.updateVis(selectedProvinceGlobal, selectedYear);
 }
