@@ -15,19 +15,15 @@ class LineChart {
         this.data = _data;
         this.selectedCategories = new Set();
         this.initVis();
-
     }
 
     initVis() {
-
         // Create SVG area, initialize scales and axes
         let vis = this;
         vis.width = vis.config.containerWidth - vis.config.margin.left - vis.config.margin.right;
         vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom - 20;
 
         // Initialize scales
-
-
         vis.svg = d3.select(vis.config.parentElement)
             .attr('width', vis.config.containerWidth)
             .attr('height', vis.config.containerHeight);
@@ -44,11 +40,25 @@ class LineChart {
             .attr('dy', '.71em')
             .text('Trails');
 
-        const dataSet = this.data;
-        const timeConv = d3.timeParse("%b");
-        var slices = dataSet.columns.slice(1).map(function(id) {
+        
+        this.updateVis("all");
+        
+    }
+
+
+
+    updateVis(selectedProvince, selectedYear = 2020) {
+        let vis = this;
+
+        vis.svg.selectAll("lines").remove();
+        // Prepar data and scales
+        let dataSet  = this.data.filter((item) => {
+            return item.provence === selectedProvince;
+        })
+        var slices = this.data.columns.slice(1).map(function(id) {
             return {
                 id: id,
+                
                 values: dataSet.map(function(d){
 
                     return {
@@ -58,17 +68,19 @@ class LineChart {
                 })
             };
         });
-        const CPIset = [slices[1],slices[3]];
-        const incomeset= [slices[2],slices[4]];
+        const CPIset = [slices[3],slices[4]];
+        const incomeset= [slices[1],slices[2]];
+        console.log(CPIset)
+        console.log(incomeset)
 
         //----------------------------SCALES----------------------------//
         const xScale = d3.scaleLinear().range([0,vis.width-10]);
         const yScale = d3.scaleLinear().rangeRound([vis.height/2, 0]);
         const yScale2 = d3.scaleLinear().rangeRound([vis.height/2, 0]);
         xScale.domain([1,12]);
-        yScale.domain([(0), 10]);
+        yScale.domain([(130), 140]);
 
-        yScale2.domain([(0), 50
+        yScale2.domain([(25), 34
         ]);
 
         //-----------------------------AXES-----------------------------//
@@ -96,7 +108,15 @@ class LineChart {
             .y(function(d) { return yScale2(d.measurement)+ vis.height/2; });
 
         let id = 0;
-        const ids = function () {
+        const ids = function (e) {
+            console.log(e)
+            if(e.id === "Y1_Income(2019)" && selectedYear === 2019){
+                return "line-active line line-"+id++;
+            }
+
+            if(e.id === "Y2_Income(2020)" && selectedYear === 2020){
+                return "line-active line line-"+id++;
+            }
             return "line line-"+id++;
         }
 
@@ -129,8 +149,6 @@ class LineChart {
             .text("wage");
 
         //----------------------------LINES-----------------------------//
-
-
         const lines =  vis.chart.selectAll("lines")
             .data(CPIset)
             .enter()
@@ -162,22 +180,6 @@ class LineChart {
                     + "," + (yScale(d.value.measurement) + 5 ) + ")"; })
             .attr("x", 5)
             .text(function(d) { return  d.id; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //....
         var mouseG = vis.chart.append("g")
             .attr("class", "mouse-over-effects");
@@ -189,8 +191,6 @@ class LineChart {
             .style("opacity", "0");
 
         var lineS = document.getElementsByClassName('line');
-
-
         var mousePerLine = mouseG.selectAll('.mouse-per-line')
             .data([slices[1],slices[2],slices[3],slices[4]])
             .enter()
@@ -231,7 +231,6 @@ class LineChart {
                     .style("opacity", "1");
             })
             .on('mousemove', function(event) { // mouse moving over canvas
-
                 var mouse = [];
                 mouse[0]= event.pageX -80;
                 mouse[1]=event.pageY;
@@ -242,12 +241,8 @@ class LineChart {
 
                         return d;
                     });
-
                 d3.selectAll(".mouse-per-line")
                     .attr("transform", function(d, i) {
-
-
-
                         var beginning = 0,
                             end = lineS[i].getTotalLength(),
                             target = null;
@@ -273,29 +268,7 @@ class LineChart {
 
                         return "translate(" + mouse[0]+ "," + (pos.y)+")";
                     });
-
-
-                //dddd
-
-
-
-
-
             })
-
-
-
-
-
-
-    }
-
-
-
-    updateVis() {
-        // Prepare data and scales
-        let vis = this;
-
 
 
         vis.renderVis();

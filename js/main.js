@@ -9,7 +9,6 @@ let originalWagesData;
 let dateSelected = "Jan-19";
 let sectorSelected = "Goods-producing sector";
 let doublePieDateAfterProcessing;
-
 // date range selector init
 const
     range = document.getElementById('range'),
@@ -140,4 +139,12 @@ const generateDoublePieData = function (sectorSelected, dateSelected) {
     // combine double
     console.log([wagesDataAfterFilter, hoursDataAfterFilter])
     return [wagesDataAfterFilter, hoursDataAfterFilter]
+}
+
+const updateLineChartbyProvince = (selectedProvince = "all") => {
+    lineChart.updateVis(selectedProvince);
+}
+
+const updateLineChartbyWageTime = (selectedYear) => {
+    lineChart.updateVis(null, selectedYear);
 }
