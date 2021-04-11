@@ -151,12 +151,15 @@ class PieChart {
           generateLabel(d.data.key, 0);
           generateLabel(d.data.value, 40)
           // d3.event.stopPropagation();
-            updateLineChartbyWageTime(vis.year);
 
         })
         .on("mouseleave", function (event, d) {
           deleteLabel()
         })
+        .on("click", function (event, d) {
+            updateLineChartbyWageTime(vis.year);
+        })
+
 
         // outside label
       vis.svg
@@ -239,7 +242,7 @@ class PieChart {
           generateLabel(d.data.key, 0)
           generateLabel(d.data.value, 40)
           // d3.event.stopPropagation();
-            updateLineChartbyWageTime(vis.year);
+          //   updateLineChartbyWageTime(vis.year);
 
         })
         .on("mouseleave", function (event, d) {
