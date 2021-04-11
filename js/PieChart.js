@@ -16,6 +16,7 @@ class PieChart {
     this.data = _data;
     this.year = _year;
     this.initVis();
+    this.toggle = true;
   }
 
   /**
@@ -144,7 +145,15 @@ class PieChart {
         })
         .attr("stroke", "white")
         .style("stroke-width", "2px")
-        .style("opacity", 0.7)
+
+        // .attr("stroke", "grey")
+        // .style("stroke-width", "3px")
+        // .style("box-shadow", "10px 5px 5px red")
+
+        .style("cursor", "pointer")
+
+
+          .style("opacity", 0.7)
         .on("mouseover", function(e, d) {
           // console.log("inside circle " + d.data.key + d.data.value);
           generateLabel("Wages", -40);
@@ -158,7 +167,28 @@ class PieChart {
         })
         .on("click", function (event, d) {
             updateLineChartbyWageTime(vis.year);
+            changeSelected();
+            // d3.select(this)
+            //     .attr("stroke", "black")
+            //     .style("stroke-width", "2px")
+
         })
+
+      const changeSelected = function (){
+        if (vis.toggle) {
+            d3.selectAll('path.pieOut')
+                .attr("stroke", "black")
+                .style("stroke-width", "2px")
+            vis.toggle = false;
+
+        } else {
+            d3.selectAll('path.pieOut')
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+            vis.toggle = true;
+        }
+
+      }
 
 
         // outside label
