@@ -75,6 +75,7 @@ class PieChart {
     let vis = this;
     if (updatedData !== null && updatedData !== undefined) {
       vis.data = updatedData;
+        vis.toggle = true;
     }
 
     if (updatePieChartYearSelected !== null && updatePieChartYearSelected !== undefined) {
