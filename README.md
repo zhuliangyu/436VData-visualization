@@ -1,4 +1,5 @@
 # CPSC 436V Project
-![Alt text](./pieChart.gif)
+
+[comment]: <> (![Alt text]&#40;./pieChart.gif&#41;)
 
 *Reference and source any external material here*
