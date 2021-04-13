@@ -1,3 +1,81 @@
+/* Style the header */
+.header {
+  padding: 10px 326px;
+  /*background: #ffffff;*/
+  color: #f1f1f1;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.menu
+  /* layout main menu */
+{
+  clear:both;
+  float:left;
+  margin-top:1em;
+  padding-bottom:1em;
+  width:100%;
+  /*background-color:gimgrey;*/
+  background-repeat:no-repeat;
+}
+ul.menu {
+  display: table;
+  margin-left: auto;
+  margin-right: 0em;
+}
+.menu li
+  /* horizontal menu layout */
+{
+  display: inline-block;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  margin-right:30px;
+  background-color: #4180dd;
+}
+.menu li a:hover
+  /* link style on-mouse-over */
+{
+  color:#FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu li:hover
+  /* button style on-mouse-over */
+{
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  background-color: #dd417f;
+}
+.menu li a
+  /* link style */
+{
+  color:#FFFFFF;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7em 1em 0.7em 1em;
+}
+.menu li.active a
+  /* active menu item style */
+{
+  color:#FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu li.active
+  /* active menu button style */
+{
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  background-color: #dd417f;
+}
+
 
   /* Axes */
  

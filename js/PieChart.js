@@ -9,7 +9,7 @@ class PieChart {
     this.config = {
       parentElement: _config.parentElement,
       containerWidth: 900,
-      containerHeight: 500,
+      containerHeight: 700,
       margin: {top: 15, right: 15, bottom: 20, left: 25},
       tooltipPadding: _config.tooltipPadding || 15
     }
