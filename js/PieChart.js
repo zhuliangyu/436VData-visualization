@@ -58,7 +58,7 @@ class PieChart {
     vis.color = d3.scaleOrdinal()
         // .domain(["a", "b", "c", "d", "e", "f", "g", "h"])
         // .domain(dataKeys)
-        .range(d3.schemeDark2);
+        .range(d3.schemeSet3);
 
     vis.pie = d3.pie()
         .sort(null) // Do not sort group by size
@@ -80,6 +80,7 @@ class PieChart {
 
     if (updatePieChartYearSelected !== null && updatePieChartYearSelected !== undefined) {
         vis.year = updatePieChartYearSelected;
+        vis.toggle = true;
     }
 
     d3.selectAll(".pieOut").remove()
