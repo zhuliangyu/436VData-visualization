@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>placeHolder</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
     <link rel="stylesheet" href="css/style_kira.css">
     <link rel="stylesheet" href="css/pieStyle.css">
@@ -19,7 +21,17 @@
         <div id="one" style="width: 100px; height: 100px">
 
         </div>
+        <h1>Over View</h1>
+        <h3>Due to the covid-19, many countries imposed tight restrictions on movement to control the spread of the virus. The restrictions bring economic activity to a near-standstill and it affects many people lives.</h3>
+        <h3>Policymakers want to assess how individual economic activity is affected by covid before providing a suitable recovery benefit plan. To address this challenge, we propose building a data visualization that allows policymakers to visually explore a dataset of covid cases, consumer price index, and wage.</h3>
+        <h3>In our visualization, we aim to assess the changes in wage and consumer price index, as well as other economic activities by comparing different provinces before and after Covid19. </h3>
+
+        <br></br>
+        <br></br>
+        <br></br>
         <h1>COVID-19 Case Per Month In CANADA</h1>
+        <h3>This geography map allows users to see the monthly covid death case in each province.</h3>
+        <h3>Users can change the slider bar to see the covid death case in the according month</h3>
         <div id="slider" style="margin-bottom: 20px"> Month</div>
         <div class="margin-top">
             <svg id="GeoChart"></svg>
@@ -27,7 +39,9 @@
 
 
         <div id="two" style="width: 100px;height: 100px"></div>
-        <h1>DonutChart</h1>
+        <h1>Changes In Wage and Working Hours in Each Sector During Covid</h1>
+        <h3>Purpose of this chart is to show the Covid-19 cases by month and province. Audiences can compare the individual wages and the price index in each industry.</h3>
+        <h3>Therefore, audiences can know which industry fluctuates the most due to covid. </h3>
         <!-- UI radio filter-->
         <div style="width: 200px; border-style:dotted; margin-bottom: 50px">
             <form id="pieFilter">
@@ -47,7 +61,10 @@
         <div id="pieChartNoLabel"></div>
 
         <div id="three" style="width: 100px;height: 120px"></div>
-        <h1>LineChart</h1>
+        <h1>Changes in Income, CPI during Covid</h1>
+        <h3>This purpose of this chart is to show the changes in CP and /income index during covid. </h3>
+        <h3>Income and CPI are correlated with each other. Usually, economists or policy makers will put those two indexes together to see consumption trends. </h3>
+        <h3>Therefore, we designed this chart to consist of two line charts.</h3>
         <div>
             <svg id="LineChart"></svg>
         </div>

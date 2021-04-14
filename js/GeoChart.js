@@ -1,13 +1,12 @@
 class GeoChart {
   constructor(_config, data) {
     this.parentElement = _config.parentElement;
-    // this.width = 1600;
-    // this.height = 1000;
     this.width = 1200;
     this.height = 750;
     this.initSvg();
   }
 
+  // initialize the SVG
   async initSvg() {
     this.svg = d3
       .select(this.parentElement)
@@ -28,6 +27,7 @@ class GeoChart {
       .attr("cx", 120)
       .attr("cy", -10);
 
+    //create and append the legend
     this.legendG = this.svg.append("g");
     this.legendG.attr("transform", `translate(${this.width - 400},100)`);
     this.svg
@@ -36,6 +36,7 @@ class GeoChart {
       .append("text")
       .text("Count of todal cases of Covid-19");
 
+    //append the text
     this.totalCanadaG
       .append("text")
       .attr("class", "totalText")
@@ -46,6 +47,7 @@ class GeoChart {
       .attr("fill", "white")
       .attr("font-size", 12);
 
+    //add the slider bar(month)
     d3.select("#slider")
       .append("input")
       .attr("class", "monthSlider")
@@ -63,6 +65,7 @@ class GeoChart {
     this.initMap();
   }
 
+  //change with the selected month
   silderEvent() {
     d3.select(".monthSlider").on("change", (e) => {
       let month = e.target.value;
@@ -73,24 +76,27 @@ class GeoChart {
     });
   }
   async initData() {
+      //load data
     this.covid = await d3.csv("./data/covid19-download.csv");
     this.map = await d3.json("./data/canada.geojson");
-    //初始化日期
+    //init date
     this.currentDate = new Date("2020-02-20");
     this.updateCurrentData();
     console.log(this.currentData, this.map);
   }
+  //update data with date
   updateCurrentData() {
     this.currentData = this.covid.filter(
       (d) => d3.timeMonth.count(new Date(d.date), this.currentDate) === 0
     );
-
+    //data processing, aggregate the daily cases into monthly cases
     this.covidCountByState = d3.rollups(
       this.currentData,
       (d) => d3.sum(d, (v) => +v.numactive),
       (d) => d.prname
     );
 
+    //province
     this.map.features.forEach((d) => {
       let value = this.covidCountByState.find(
         (v) => v[0] === d.properties.name
@@ -99,6 +105,8 @@ class GeoChart {
       d.name = d.properties.name;
     });
   }
+
+  //init map
   initMap() {
     this.color = d3
       .scaleSqrt()
@@ -119,6 +127,8 @@ class GeoChart {
     this.addCircles();
     this.addLegend();
   }
+
+  //append circle and info on each province
   addCircles() {
     d3.select(".totalText").text(d3.sum(this.covidCountByState, (d) => d[1]));
     let circle = this.svg
@@ -146,6 +156,7 @@ class GeoChart {
       .attr("dominant-baseline", "middle");
   }
 
+  //legend
   addLegend() {
     this.legendG
       .selectAll("rect")
