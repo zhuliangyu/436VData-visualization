@@ -7,8 +7,11 @@ Our visualization consisted of three Views. View1 (Geography Map) shows the numb
 
 ## Team Info
 Team Number: 17 
+
 Zexu(Kira) Yan                   58748013
+
 Yang(Larry) Liu       	        26631960
+
 Liangyu(Ricky) Zhu             47535364 
 
 ## File Structure
