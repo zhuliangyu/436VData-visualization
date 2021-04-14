@@ -1,5 +1,4 @@
-# CPSC 436V Project
+# CPSC 436V Project Team 17
 
-[comment]: <> (![Alt text]&#40;./pieChart.gif&#41;)
-
-*Reference and source any external material here*
+File Structure
+![Alt text](./fileStructure.jpg)
